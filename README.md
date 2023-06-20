@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/princeiscoding/f.e.m-four-card-feature)
+- Live Site URL: [Add live site URL here](https://fe-m-fourcard-feature.netlify.app/)
 
 ### Built with
 
@@ -29,5 +29,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Prince Chima](https://www.your-site.com)
+- Website - [Prince Chima](https://fe-m-fourcard-feature.netlify.app/)
 - Frontend Mentor - [@princeiscoding](https://www.frontendmentor.io/profile/princeiscoding)
