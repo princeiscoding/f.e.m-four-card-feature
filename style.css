@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+/* custom properties */
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+main {
+  display: grid;
+  max-width: 400px;
+  gap: 1rem;
+  background: var(--Very-Light-Gray);
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+h1,
+.caption {
+  font-size: 1.5rem;
+}
+
+h1,
+h3 {
+  color: var(--VeryDarkBlue);
+}
+h1 {
+  font-weight: 600;
+}
+.header {
+  text-align: center;
+}
+.caption {
+  font-weight: 200;
+}
+.message {
+  margin: 1.5rem auto 3.5rem;
+  font-size: 15px;
+  color: var(--GrayishBlue);
+}
+.category {
+  display: grid;
+  text-align: left;
+  padding: 2em;
+  border-radius: 5px;
+  background: white;
+  font-size: 15px;
+  border-top: 5px solid;
+  margin-bottom: 0.5rem;
+  box-shadow: 3px 3px 9px 2px var(--GrayishBlue);
+}
+.category h3 {
+  /* color: ; */
+  font-weight: 600;
+}
+.desc {
+  font-size: 13px;
+  color: var(--GrayishBlue);
+}
+.category img {
+  justify-self: right;
+  margin-top: 2rem;
+}
+.supervisor {
+  border-top-color: var(--Cyan);
+}
+.team-builder {
+  border-top-color: var(--Red);
+}
+.karma {
+  border-top-color: var(--Orange);
+}
+.calculator {
+  border-top-color: var(--Blue);
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0rem;
+    padding: 2rem 5rem;
+    justify-items: center;
+  }
+  h1,
+  .caption {
+    font-size: 2.3rem;
+  }
+  .message {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .category {
+    max-width: 350px;
+    margin-bottom: 0px;
+    height: fit-content;
+  }
+  .header {
+    grid-column: 1/-1;
+    justify-content: center;
+    max-width: 500px;
+    grid-row: 1/2;
+  }
+
+  .supervisor,
+  .calculator {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    margin-top: 270px;
+    justify-self: end;
+    align-self: center;
+  }
+  .team-builder,
+  .karma {
+    margin: 1rem 2rem;
+  }
+  .team-builder {
+    grid-column: 2/3;
+    grid-row-start: 2;
+    align-self: end;
+  }
+  .karma {
+    grid-column: 2/3;
+  }
+  .calculator {
+    grid-column: 3/-1;
+    justify-self: start;
+  }
+}
